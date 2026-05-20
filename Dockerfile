@@ -1,12 +1,10 @@
-FROM nginx:1.27-alpine
+FROM python:3.12-alpine
 
-# Remove default site config
-RUN rm /etc/nginx/conf.d/default.conf
+WORKDIR /app
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY index.html channel-doctor.html style.css script.js channel-doctor.js /usr/share/nginx/html/
-
-EXPOSE 80
+COPY index.html channel-doctor.html style.css script.js channel-doctor.js ./
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD wget -qO- http://127.0.0.1/ > /dev/null || exit 1
+  CMD wget -qO- http://127.0.0.1:8005/ > /dev/null || exit 1
+
+CMD ["python", "-m", "http.server", "8005", "--bind", "0.0.0.0"]

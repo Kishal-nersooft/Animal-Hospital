@@ -5,7 +5,7 @@ Static marketing site for Best Care Animal Hospital (Nugegoda, Sri Lanka), inclu
 ## Stack
 
 - HTML, CSS, JavaScript (no build step)
-- [nginx](https://nginx.org/) (Alpine) in Docker for production serving
+- Python static file server in Docker (port 8005)
 
 ## Pages
 
@@ -27,7 +27,7 @@ From the project root:
 docker compose up -d --build
 ```
 
-Open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8005](http://localhost:8005).
 
 Stop the stack:
 
@@ -41,10 +41,10 @@ Build and run manually:
 
 ```bash
 docker build -t bestcare-animal-hospital .
-docker run -d --name bestcare -p 8080:80 --restart unless-stopped bestcare-animal-hospital
+docker run -d --name bestcare -p 8005:8005 --restart unless-stopped bestcare-animal-hospital
 ```
 
-Visit [http://localhost:8080](http://localhost:8080).
+Visit [http://localhost:8005](http://localhost:8005).
 
 Remove the container:
 
@@ -66,23 +66,13 @@ Then open [http://localhost:8000](http://localhost:8000).
 
 | Variable / setting | Default | Notes |
 |--------------------|---------|--------|
-| Host port | `8080` | Change in `docker-compose.yml` under `ports` (e.g. `"80:80"` for port 80) |
-| Container port | `80` | nginx inside the container |
+| Port | `8005` | Change in `docker-compose.yml` under `ports` and in the Dockerfile `CMD` |
 
 ## Deployment notes
 
 - The site loads fonts and icons from CDNs and images from external URLs; the host needs outbound HTTPS access.
 - For production, put a reverse proxy (e.g. Caddy, Traefik, or cloud load balancer) in front of the container for TLS.
 - Map host port `80` or `443` only if nothing else uses those ports on the server.
-
-Example production compose override — bind port 80 on the host:
-
-```yaml
-services:
-  web:
-    ports:
-      - "80:80"
-```
 
 ## Health check
 
@@ -105,7 +95,6 @@ Status should show `healthy` after a few seconds.
 ├── channel-doctor.js
 ├── Dockerfile
 ├── docker-compose.yml
-├── nginx.conf
 └── README.md
 ```
 
