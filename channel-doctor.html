@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Channel a Doctor — Connect with veterinarians at Best Care Animal Hospital. Find a vet and get care for your pet.">
+  <title>Channel a Doctor — Best Care Animal Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-channel-doctor">
+
+  <div class="particles" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Best Care Animal Hospital — Home">
+        <img
+          src="https://www.bestcare.lk/web/image/website/1/logo/Best%20Care%20Animal%20Hospital?unique=4deca26"
+          alt="Best Care Animal Hospital"
+          class="logo-img"
+          width="240"
+          height="56"
+        >
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="channel-doctor.html" class="nav-highlight active"><i class="fa-solid fa-stethoscope"></i> Channel a Doctor</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+94117400800" class="nav-phone"><i class="fa-solid fa-phone"></i> 011 7 400 800</a>
+        <a href="#channel-form" class="btn btn-primary btn-sm">Get Connected</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="channel-hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container channel-hero-grid">
+      <div class="channel-hero-content reveal">
+        <span class="hero-badge"><i class="fa-solid fa-user-doctor"></i> Book with Best Care</span>
+        <h1>Channel your pet to a <span class="gradient-text">qualified veterinarian</span></h1>
+        <p>Request an appointment with our qualified doctors and professionally trained veterinary assistants at Best Care Animal Hospital, Nugegoda — or call our hotline for OPD, surgery, and mobile vet bookings.</p>
+        <div class="channel-hero-actions">
+          <a href="#find-vet" class="btn btn-primary btn-lg"><i class="fa-solid fa-magnifying-glass"></i> Find a Vet</a>
+          <a href="#channel-form" class="btn btn-ghost btn-lg">Request a Connection</a>
+        </div>
+        <div class="channel-hero-stats">
+          <div class="channel-stat glass">
+            <strong>365</strong>
+            <span>Days OPD open</span>
+          </div>
+          <div class="channel-stat glass">
+            <strong>8am–8pm</strong>
+            <span>Daily hours</span>
+          </div>
+          <div class="channel-stat glass">
+            <strong>Since 2010</strong>
+            <span>Serving Sri Lanka</span>
+          </div>
+        </div>
+      </div>
+      <div class="channel-hero-visual reveal" data-delay="150">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Veterinarian examining a pet" class="channel-hero-img">
+        <div class="float-card float-card-1 glass">
+          <i class="fa-solid fa-calendar-check"></i>
+          <div>
+            <strong>Same-week</strong>
+            <span>Appointments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How channeling works -->
+  <section class="channel-steps">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">How it works</span>
+        <h2>Three steps to channel your pet to care</h2>
+        <p>Built for patients — fast routing from your home to the right clinic.</p>
+      </div>
+      <div class="channel-steps-grid">
+        <div class="channel-step-card reveal" data-delay="0">
+          <span class="channel-step-num">01</span>
+          <div class="channel-step-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Search & compare</h3>
+          <p>Browse partner veterinarians by city, specialty, and pet type.</p>
+        </div>
+        <div class="channel-step-card reveal" data-delay="100">
+          <span class="channel-step-num">02</span>
+          <div class="channel-step-icon"><i class="fa-solid fa-paper-plane"></i></div>
+          <h3>Submit your request</h3>
+          <p>Tell us about your pet and preferred clinic — we route your channel request.</p>
+        </div>
+        <div class="channel-step-card reveal" data-delay="200">
+          <span class="channel-step-num">03</span>
+          <div class="channel-step-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Visit Best Care</h3>
+          <p>Come to No.43 Pagoda Road, Nugegoda — or use our mobile vet service for home treatments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find a vet -->
+  <section class="find-vet" id="find-vet">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Find a vet</span>
+        <h2>Our veterinary team</h2>
+        <p>Select a doctor at Best Care Animal Hospital to start your channel request.</p>
+      </div>
+
+      <div class="vet-filters glass reveal">
+        <div class="form-group">
+          <label for="vetCity"><i class="fa-solid fa-city"></i> City</label>
+          <input type="text" id="vetCity" placeholder="Nugegoda, Colombo, Kandy…">
+        </div>
+        <div class="form-group">
+          <label for="vetSpecialty"><i class="fa-solid fa-briefcase-medical"></i> Specialty</label>
+          <select id="vetSpecialty">
+            <option value="">All specialties</option>
+            <option value="general">General practice</option>
+            <option value="surgery">Surgery</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="emergency">Emergency</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Pet type</label>
+          <div class="pet-type-toggle vet-pet-toggle">
+            <button type="button" class="pet-type-btn active" data-filter="all">All</button>
+            <button type="button" class="pet-type-btn" data-filter="dog"><i class="fa-solid fa-dog"></i> Dog</button>
+            <button type="button" class="pet-type-btn" data-filter="cat"><i class="fa-solid fa-cat"></i> Cat</button>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="vetSearchBtn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+      </div>
+
+      <div class="vet-grid" id="vetGrid">
+        <!-- Populated by JS -->
+      </div>
+      <p class="vet-no-results hidden" id="vetNoResults">No veterinarians match your filters. Try another city or specialty.</p>
+    </div>
+  </section>
+
+  <!-- Channel request form -->
+  <section class="channel-form-section" id="channel-form">
+    <div class="container">
+      <div class="channel-form-layout">
+        <div class="channel-form-info reveal">
+          <span class="section-tag">Patient channel</span>
+          <h2>Request to channel your pet to a doctor</h2>
+          <p>Fill in your details and we'll connect you with a partner veterinarian. Ideal if you're a new patient or need a referral within our network.</p>
+          <ul class="community-list">
+            <li><i class="fa-solid fa-check"></i> Free for insured members</li>
+            <li><i class="fa-solid fa-check"></i> Response within 24 hours</li>
+            <li><i class="fa-solid fa-check"></i> Insurance linked automatically</li>
+            <li><i class="fa-solid fa-check"></i> Choose your preferred clinic</li>
+          </ul>
+        </div>
+        <form class="channel-form glass reveal" id="channelRequestForm" data-delay="100">
+          <h3>Your channel request</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patientName">Your name</label>
+              <input type="text" id="patientName" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label for="patientEmail">Email</label>
+              <input type="email" id="patientEmail" placeholder="you@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patientPhone">Phone</label>
+              <input type="tel" id="patientPhone" placeholder="06 12 34 56 78" required>
+            </div>
+            <div class="form-group">
+              <label for="patientCity">Your city</label>
+              <input type="text" id="patientCity" placeholder="City" required>
+            </div>
+          </div>
+          <hr class="form-divider">
+          <h4>Pet details</h4>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="channelPetName">Pet name</label>
+              <input type="text" id="channelPetName" placeholder="e.g. Luna" required>
+            </div>
+            <div class="form-group">
+              <label for="channelPetType">Pet type</label>
+              <select id="channelPetType" required>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="preferredVet">Preferred veterinarian</label>
+            <input type="text" id="preferredVet" placeholder="Select from list above or type clinic name">
+          </div>
+          <div class="form-group">
+            <label for="visitReason">Reason for visit</label>
+            <select id="visitReason" required>
+              <option value="">Select reason</option>
+              <option value="checkup">Routine check-up</option>
+              <option value="vaccination">Vaccination</option>
+              <option value="illness">Illness / symptoms</option>
+              <option value="emergency">Urgent care</option>
+              <option value="followup">Follow-up</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="channelNotes">Additional notes</label>
+            <textarea id="channelNotes" rows="3" placeholder="Anything we should know…"></textarea>
+          </div>
+          <div class="form-group form-checkbox">
+            <label>
+              <input type="checkbox" id="hasInsurance" checked>
+              I am an existing Best Care client
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <i class="fa-solid fa-paper-plane"></i> Submit Channel Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- For veterinarians -->
+  <section class="vet-partner-cta">
+    <div class="container">
+      <div class="vet-partner-card glass reveal">
+        <div class="vet-partner-text">
+          <span class="section-tag">For veterinarians</span>
+          <h2>Become a channel partner clinic</h2>
+          <p>Join our network and receive patient channels from insured pet parents. Grow your practice with qualified referrals.</p>
+        </div>
+        <a href="mailto:info@bestcare.lk" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-handshake"></i> Partner with us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-gradient"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Best Care Animal Hospital — Home">
+            <img
+              src="https://www.bestcare.lk/web/image/website/1/logo/Best%20Care%20Animal%20Hospital?unique=4deca26"
+              alt="Best Care Animal Hospital"
+              class="logo-img logo-img--footer"
+              width="240"
+              height="56"
+            >
+          </a>
+          <p>Connect patients to trusted veterinarians. Part of the Best Care Animal Hospital network.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Patients</h4>
+          <ul>
+            <li><a href="channel-doctor.html">Channel a Doctor</a></li>
+            <li><a href="#find-vet">Find a Vet</a></li>
+            <li><a href="#channel-form">Request Connection</a></li>
+            <li><a href="index.html#quote">Get Insurance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Insurance</h4>
+          <ul>
+            <li><a href="index.html#services">OPD Treatments</a></li>
+            <li><a href="index.html#services">Surgery</a></li>
+            <li><a href="index.html#services">Mobile Vet</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94117400800">011 7 400 800</a></li>
+            <li><i class="fa-solid fa-envelope"></i> info@bestcare.lk</li>
+            <li><i class="fa-solid fa-location-dot"></i> No.43, Pagoda Road, Nugegoda</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Pet care tips for patients & partners.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Best Care Animal Hospital. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="channel-doctor.js"></script>
+</body>
+</html>
